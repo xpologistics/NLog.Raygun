@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.Raygun", "NLog.Raygun\NLog.Raygun.csproj", "{F5744BD5-98C2-4082-9D04-9D28536D5DBB}"
 EndProject
@@ -15,6 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{14CA5A
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.Raygun.WebTestApp", "NLog.Raygun.WebTestApp\NLog.Raygun.WebTestApp.csproj", "{AFFD95DD-F82C-4AF5-840C-D05E8215031C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AC4FC5F-71D8-45B9-8CC8-D93FFA8039FD}"
+	ProjectSection(SolutionItems) = preProject
+		NLog.Raygun.nuspec = NLog.Raygun.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
