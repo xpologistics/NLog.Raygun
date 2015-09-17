@@ -9,9 +9,12 @@
     <summary>NLog Raygun Integration</summary>
     <description>Addong for NLog to support logging exceptions to RayGun.io</description>
     <copyright>Copyright 2015</copyright>
-    <dependencies />
+    <dependencies>
+      <dependency id="Mindscape.Raygun4Net" version="5.0.1" />
+      <dependency id="NLog" version="3.2.1" />
+    </dependencies>
   </metadata>
   <files>
-    <file src=".\NLog.Raygun\bin\$configuration$\NLog.Raygun.dll" target="lib\net45\" />
+    <file src="..\NLog.Raygun\bin\$configuration$\NLog.Raygun.dll" target="lib\net45\" />
   </files>
 </package>
