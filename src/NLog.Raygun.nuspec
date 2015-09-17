@@ -15,6 +15,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\NLog.Raygun\bin\$configuration$\NLog.Raygun.dll" target="lib\net45\" />
+    <file src="NLog.Raygun\bin\$configuration$\NLog.Raygun.dll" target="lib\net45\" />
   </files>
 </package>
