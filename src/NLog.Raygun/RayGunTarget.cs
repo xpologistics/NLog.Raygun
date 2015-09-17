@@ -13,19 +13,15 @@ namespace NLog.Raygun
     [RequiredParameter]
     public string ApiKey { get; set; }
 
-    [RequiredParameter]
     public string Tags { get; set; }
 
-    [RequiredParameter]
     public string IgnoreFormFieldNames { get; set; }
 
     [RequiredParameter]
     public string IgnoreCookieNames { get; set; }
 
-    [RequiredParameter]
     public string IgnoreServerVariableNames { get; set; }
 
-    [RequiredParameter]
     public string IgnoreHeaderNames { get; set; }
 
     [RequiredParameter]
