@@ -17,7 +17,6 @@ namespace NLog.Raygun
 
     public string IgnoreFormFieldNames { get; set; }
 
-    [RequiredParameter]
     public string IgnoreCookieNames { get; set; }
 
     public string IgnoreServerVariableNames { get; set; }
