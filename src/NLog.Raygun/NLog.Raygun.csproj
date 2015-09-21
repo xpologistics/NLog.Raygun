@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NLogRayGunLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RaygunException.cs" />
     <Compile Include="RayGunTarget.cs" />
