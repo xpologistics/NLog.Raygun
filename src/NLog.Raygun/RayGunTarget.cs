@@ -51,7 +51,7 @@ namespace NLog.Raygun
 
     private static bool IsException(LogEventInfo logEvent)
     {
-      return logEvent.Parameters.Any() && logEvent.Parameters.FirstOrDefault() != null && logEvent.Parameters.First().GetType() == typeof(Exception);
+      return logEvent.Parameters != null && logEvent.Parameters.Any() && logEvent.Parameters.FirstOrDefault() != null && logEvent.Parameters.First().GetType() == typeof(Exception);
     }
 
     private static List<string> ExtractTagsFromException(Exception exception)
