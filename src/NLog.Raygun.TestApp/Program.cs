@@ -25,6 +25,7 @@ namespace NLog.Raygun.TestApp
       }
       catch (Exception exception)
       {
+        exception.Data["test-user"] = "hello";
         logger.Error(exception);
       }
 
