@@ -66,7 +66,7 @@ namespace NLog.Raygun
             {
                 if (exception.Data.Contains(customDataField))
                 {
-                    dictionary.Add(customDataField, exception.Data[CustomDataFieldNames]?.ToString());
+                    dictionary.Add(customDataField, exception.Data[customDataField]?.ToString());
                 }
             }
 
