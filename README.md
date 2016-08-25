@@ -13,6 +13,7 @@ You need to configure NLog.config.
 #### Settings
 
 * ApiKey - your API key
+* CustomDataFieldNames - fields that you want to read out of the exception and pass as custom data
 * Tags - tags you want to send in with every exception
 * IgnoreFormFieldNames - form fields you wish to ignore, eg passwords and credit cards
 * IgnoreCookieNames - cookies you wish to ignore, eg user tokens
@@ -40,7 +41,8 @@ Your `NLog.config` should look something like this:
         name="RayGunTarget" 
         type="RayGun" 
         ApiKey="" 
-        Tags="" 
+        Tags=""
+        CustomDataFieldNames="" 
         IgnoreFormFieldNames="" 
         IgnoreCookieNames=""
 				IgnoreServerVariableNames="" 
@@ -64,4 +66,12 @@ You can add tags per exception by putting a List<string> of tags into your Excep
 ```csharp
 var e = new Exception("Test Exception");
 e.Data["Tags"] = new List<string> { "Tester123" }; 
+```
+
+## Custom Data
+
+You can add custom data per exception by putting data in Exception.Data and setting the values in CustomDataFieldNames
+```csharp
+var e = new Exception("Test Exception");
+e.Data["CustomerData"] = "Something";
 ```
