@@ -49,7 +49,10 @@ namespace NLog.Raygun
                 RaygunException exception = new RaygunException(logMessage, logEvent.Exception);
                 RaygunClient client = CreateRaygunClient();
 
-                SendMessage(client, exception, new List<string>(), new Dictionary<string, string>());
+                List<string> tags = ExtractTagsFromException(exception);
+                IDictionary customData = ExtractCustomDataFromException(exception);
+
+                SendMessage(client, exception, tags, customData);
             }
         }
 
